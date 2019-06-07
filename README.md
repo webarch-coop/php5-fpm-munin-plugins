@@ -1,14 +1,15 @@
 ### To install on Ubuntu:
 
 ```
-cd /usr/share/munin/plugins
+mkdir -p /usr/local/share/munin/plugins
+cd /usr/local/share/munin/plugins
 git clone git://github.com/tjstein/php5-fpm-munin-plugins.git
 chmod +x php5-fpm-munin-plugins/phpfpm_*
-ln -s /usr/share/munin/plugins/php5-fpm-munin-plugins/phpfpm_average /etc/munin/plugins/phpfpm_average
-ln -s /usr/share/munin/plugins/php5-fpm-munin-plugins/phpfpm_connections /etc/munin/plugins/phpfpm_connections
-ln -s /usr/share/munin/plugins/php5-fpm-munin-plugins/phpfpm_memory /etc/munin/plugins/phpfpm_memory
-ln -s /usr/share/munin/plugins/php5-fpm-munin-plugins/phpfpm_status /etc/munin/plugins/phpfpm_status
-ln -s /usr/share/munin/plugins/php5-fpm-munin-plugins/phpfpm_processes /etc/munin/plugins/phpfpm_processes
+ln -s /usr/local/share/munin/plugins/php5-fpm-munin-plugins/phpfpm_average /etc/munin/plugins/phpfpm_average
+ln -s /usr/local/share/munin/plugins/php5-fpm-munin-plugins/phpfpm_connections /etc/munin/plugins/phpfpm_connections
+ln -s /usr/local/share/munin/plugins/php5-fpm-munin-plugins/phpfpm_memory /etc/munin/plugins/phpfpm_memory
+ln -s /usr/local/share/munin/plugins/php5-fpm-munin-plugins/phpfpm_status /etc/munin/plugins/phpfpm_status
+ln -s /usr/local/share/munin/plugins/php5-fpm-munin-plugins/phpfpm_processes /etc/munin/plugins/phpfpm_processes
 service munin-node restart
 ```
 
